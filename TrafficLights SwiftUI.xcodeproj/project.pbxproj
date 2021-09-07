@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA6BE01C26E7D47C00223D68 /* CircleCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6BE01B26E7D47C00223D68 /* CircleCustom.swift */; };
+		FA6BE01E26E7DDCA00223D68 /* ButtonCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6BE01D26E7DDCA00223D68 /* ButtonCustom.swift */; };
 		FABC39DE26E7D2ED00CC7E4D /* TrafficLights_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABC39DD26E7D2ED00CC7E4D /* TrafficLights_SwiftUIApp.swift */; };
 		FABC39E026E7D2ED00CC7E4D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABC39DF26E7D2ED00CC7E4D /* ContentView.swift */; };
 		FABC39E226E7D2F300CC7E4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FABC39E126E7D2F300CC7E4D /* Assets.xcassets */; };
@@ -14,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FA6BE01B26E7D47C00223D68 /* CircleCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleCustom.swift; sourceTree = "<group>"; };
+		FA6BE01D26E7DDCA00223D68 /* ButtonCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonCustom.swift; sourceTree = "<group>"; };
 		FABC39DA26E7D2ED00CC7E4D /* TrafficLights SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TrafficLights SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FABC39DD26E7D2ED00CC7E4D /* TrafficLights_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficLights_SwiftUIApp.swift; sourceTree = "<group>"; };
 		FABC39DF26E7D2ED00CC7E4D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -54,6 +58,8 @@
 			children = (
 				FABC39DD26E7D2ED00CC7E4D /* TrafficLights_SwiftUIApp.swift */,
 				FABC39DF26E7D2ED00CC7E4D /* ContentView.swift */,
+				FA6BE01D26E7DDCA00223D68 /* ButtonCustom.swift */,
+				FA6BE01B26E7D47C00223D68 /* CircleCustom.swift */,
 				FABC39E126E7D2F300CC7E4D /* Assets.xcassets */,
 				FABC39E626E7D2F300CC7E4D /* Info.plist */,
 				FABC39E326E7D2F300CC7E4D /* Preview Content */,
@@ -138,8 +144,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA6BE01E26E7DDCA00223D68 /* ButtonCustom.swift in Sources */,
 				FABC39E026E7D2ED00CC7E4D /* ContentView.swift in Sources */,
 				FABC39DE26E7D2ED00CC7E4D /* TrafficLights_SwiftUIApp.swift in Sources */,
+				FA6BE01C26E7D47C00223D68 /* CircleCustom.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
