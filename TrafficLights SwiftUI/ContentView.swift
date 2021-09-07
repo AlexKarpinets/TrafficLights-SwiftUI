@@ -23,6 +23,7 @@ struct ContentView: View {
             .padding()
         Spacer()
             .padding()
+            ButtonCustom(text: Text("START"))
         }
         
     }
