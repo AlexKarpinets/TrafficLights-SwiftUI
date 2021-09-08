@@ -8,12 +8,14 @@
 import SwiftUI
 
 struct ButtonCustom: View {
-    @State var text: Text
+    @State var buttonTitle = "START"
+    
     var body: some View {
         
-        Button.init(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/,
+        
+        Button.init(action: {buttonTitle = "NEXT"},
                     label: {
-                        Text("START")
+                        Text(buttonTitle)
                             .foregroundColor(.white)
                             .font(.title)
                             .fontWeight(.bold)
@@ -23,13 +25,13 @@ struct ButtonCustom: View {
             .cornerRadius(30)
             .overlay(
                 Capsule().stroke(Color.white, lineWidth: 3))
+            .padding()
     }
-    
 }
-
 
 struct ButtonCustom_Previews: PreviewProvider {
     static var previews: some View {
-        ButtonCustom(text: Text("START"))
+        ButtonCustom()
     }
 }
+
