@@ -9,12 +9,13 @@ import SwiftUI
 
 struct CircleCustom: View {
     let color: Color
+    
     var body: some View {
         
         Circle()
             .frame(width: 100, height: 100)
             .foregroundColor(color)
-            .opacity(0.5)
+            .opacity(0.3)
             .overlay(
                 Circle().stroke(Color.white, lineWidth: 3))
     }
