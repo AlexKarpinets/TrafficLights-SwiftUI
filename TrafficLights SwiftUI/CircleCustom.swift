@@ -9,13 +9,14 @@ import SwiftUI
 
 struct CircleCustom: View {
     let color: Color
+    let opacity: Double
     
     var body: some View {
         
         Circle()
             .frame(width: 100, height: 100)
             .foregroundColor(color)
-            .opacity(0.3)
+            .opacity(opacity)
             .overlay(
                 Circle().stroke(Color.white, lineWidth: 3))
     }
@@ -23,6 +24,6 @@ struct CircleCustom: View {
 
 struct Circle_Previews: PreviewProvider {
     static var previews: some View {
-        CircleCustom(color: .red)
+        CircleCustom(color: .red, opacity: 0.3)
     }
 }

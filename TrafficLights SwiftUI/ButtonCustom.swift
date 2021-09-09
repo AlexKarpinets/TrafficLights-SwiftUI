@@ -7,33 +7,17 @@
 
 import SwiftUI
 
+enum CurrentLight {
+    case red, yellow, green
+}
+
 struct ButtonCustom: View {
-    @State private var buttonTitle = "START"
-    @State private var currentLight = CurrentLight.red
-    
-    enum CurrentLight {
-        case red, yellow, green
-    }
+    let buttonTitle: String
+    let action: () -> ()
     
     var body: some View {
         
-        
-        Button.init(action: {
-            buttonTitle = "NEXT"
-            
-            switch currentLight {
-            case .red:
-                CircleCustom(color: .red
-                                .opacity(1))
-                CircleCustom(color: .green
-                                .opacity(0.3))
-                currentLight = .yellow
-            case .yellow:
-                currentLight = .green
-            case .green: 
-                currentLight = .red
-            }
-        },
+        Button(action: action,
         label: {
             Text(buttonTitle)
                 .foregroundColor(.white)
@@ -51,7 +35,8 @@ struct ButtonCustom: View {
 
 struct ButtonCustom_Previews: PreviewProvider {
     static var previews: some View {
-        ButtonCustom()
+        ButtonCustom(buttonTitle: "START") {
+        }
     }
 }
 
